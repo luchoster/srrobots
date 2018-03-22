@@ -2,28 +2,13 @@ import * as R from 'ramda'
 import React from 'react'
 import Link from 'gatsby-link'
 import Slider from 'react-slick'
-import { notNilOrEmpty } from '../lib/helpers'
+import { notNilOrEmpty, mapIndexed } from '../lib/helpers'
+import parallaxBg1 from '../assets/imgs/parallax-1.png'
 
-class IndexPage extends React.Component {
+export default class Home extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
-    return (
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-          </div>
-        </div>
-      </section>
-    )
-  }
-}
-
-export default class Home extends React.Component {
-  componentDidMount() {}
-  render() {
     const settings = {
       autoplay: true,
       arrows: false,
@@ -33,10 +18,10 @@ export default class Home extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     }
-    const page = R.find(R.props(['templateKey', 'home-page']))(
-      this.props.data.allMarkdownRemark.edges
-    )
-    console.log(this.props.data.allMarkdownRemark.edges)
+    const page = posts.filter(
+      post => post.node.frontmatter.templateKey === 'home-page'
+    )[0].node.frontmatter
+    console.log(page)
     return (
       <main id="main">
         <Slider
@@ -44,14 +29,14 @@ export default class Home extends React.Component {
           id="banner-slider"
           className="hero-slider banner-slider curve-up sp-horizontal sp-swiping"
         >
-          {notNilOrEmpty(page.home_fields_group) &&
+          {notNilOrEmpty(page) &&
             mapIndexed((item, index) => (
               <div
                 key={index}
                 className="slide-img"
-                style={{ background: `url(${item.hero_img}) center no-repeat` }}
+                style={{ background: `url(${item.image}) center no-repeat` }}
               />
-            ))(page.home_fields_group.hero)}
+            ))(page.hero)}
         </Slider>
         <section className="school-area curve-down">
           <span className="scho-service-icon style-2">
@@ -61,13 +46,8 @@ export default class Home extends React.Component {
             />
           </span>
           <div className="school-area-heading">
-            <h3>
-              The Best Educational Robots At The Most Affordable Price<br />
-            </h3>
-            <p>
-              We help children learn today’s most important skills by playing
-              with robots.{' '}
-            </p>
+            <h3>{page.heading}</h3>
+            <p>{page.subheading}</p>
           </div>
           {/* Services  */}
           <div style={{ background: `url(${parallaxBg1}) 50% 0 no-repeat` }}>
@@ -85,11 +65,7 @@ export default class Home extends React.Component {
                       <h4>
                         <a href="#">The Best Robots For Kids</a>
                       </h4>
-                      <p>
-                        We carry the best robots on the markets at the most
-                        affordable rate. Our robots are designed to engage
-                        children ages 4 all the way up to 16.
-                      </p>
+                      <p>{page.intro.blurbs[0].text}</p>
                     </div>
                   </div>
                   <div className="col-sm-4 col-xs-6 r-full-width">
@@ -103,11 +79,7 @@ export default class Home extends React.Component {
                       <h4>
                         <a href="#">Happy Social Group</a>
                       </h4>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptat accusantium doloremque lada tum, totam rem
-                        aperiam lada tum.
-                      </p>
+                      <p>{page.intro.blurbs[1].text}</p>
                     </div>
                   </div>
                   <div className="col-sm-4 col-xs-6 r-full-width">
@@ -115,17 +87,14 @@ export default class Home extends React.Component {
                       <span className="scho-service-icon bg-3">
                         <img
                           src={require('../assets/imgs/school-services/img-03.png')}
+                          src={page.intro.blurbs[2].image}
                           alt=""
                         />
                       </span>
                       <h4>
                         <a href="#">We Love Math &amp; Drawing</a>
                       </h4>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptat accusantium doloremque lada tum, totam rem
-                        aperiam lada tum.
-                      </p>
+                      <p>{page.intro.blurbs[2].text}</p>
                     </div>
                   </div>
                   <div className="col-sm-4 col-xs-6 r-full-width">
@@ -139,11 +108,7 @@ export default class Home extends React.Component {
                       <h4>
                         <a href="#">Learn With Best Teachers</a>
                       </h4>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptat accusantium doloremque lada tum, totam rem
-                        aperiam lada tum.
-                      </p>
+                      <p>{page.intro.blurbs[3].text}</p>
                     </div>
                   </div>
                   <div className="col-sm-4 col-xs-6 r-full-width">
@@ -157,11 +122,7 @@ export default class Home extends React.Component {
                       <h4>
                         <a href="#">Happy Social Group</a>
                       </h4>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptat accusantium doloremque lada tum, totam rem
-                        aperiam lada tum.
-                      </p>
+                      <p>{page.intro.blurbs[4].text}</p>
                     </div>
                   </div>
                   <div className="col-sm-4 col-xs-6 r-full-width">
@@ -175,11 +136,7 @@ export default class Home extends React.Component {
                       <h4>
                         <a href="#">We Love Math &amp; Drawing</a>
                       </h4>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptat accusantium doloremque lada tum, totam rem
-                        aperiam lada tum.
-                      </p>
+                      <p>{page.intro.blurbs[5].text}</p>
                     </div>
                   </div>
                 </div>
@@ -364,6 +321,27 @@ export default class Home extends React.Component {
     )
   }
 }
+
+const homePageQuery = graphql`
+  query HomePage($id: String!) {
+    markdownRemark(id: { eq: "Home" }) {
+      frontmatter {
+        heading
+        subheading
+        hero {
+          image
+          text
+        }
+        intro {
+          blurbs {
+            image
+            text
+          }
+        }
+      }
+    }
+  }
+`
 
 export const pageQuery = graphql`
   query IndexQuery {
