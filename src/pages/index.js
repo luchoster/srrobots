@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Slider from 'react-slick'
 import { notNilOrEmpty, mapIndexed } from '../lib/helpers'
-import parallaxBg1 from '../assets/imgs/parallax-1.png'
+import ParallaxBg1 from '../assets/imgs/parallax-1.png'
 
 export default class Home extends React.Component {
   render() {
@@ -50,7 +50,7 @@ export default class Home extends React.Component {
             <p>{page.subheading}</p>
           </div>
           {/* Services  */}
-          <div style={{ background: `url(${parallaxBg1}) 50% 0 no-repeat` }}>
+          <div style={{ background: `url(${ParallaxBg1}) 50% 0 no-repeat` }}>
             <div className="container">
               <div className="services-shadow radius-8 overflow-hidden">
                 <div className="row no-gutters">
