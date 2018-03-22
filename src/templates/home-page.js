@@ -21,7 +21,7 @@ export default ({ data }) => {
     <HomePageTemplate
       heading={frontmatter.heading}
       subHeading={frontmatter.subHeading}
-      slider={frontmatter.slider}
+      slider={frontmatter.hero}
       intro={frontmatter.intro}
       main={frontmatter.main}
     />
@@ -40,7 +40,7 @@ export const homePageQuery = graphql`
             text
           }
         }
-        slider {
+        hero {
           image1 {
             alt
             image
