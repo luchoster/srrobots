@@ -1,17 +1,20 @@
 ---
-templateKey: 'home-page'
-path: /home
-heading: What we offer
-subheading: something
+templateKey: home-page
+heading: The Best Educational Robots At The Most Affordable Price
+subheading: We help children learn today’s most important skills by playing with robots.
+hero:
+  - image: /img/stem.jpg
+    text: STEM
+  - image: /img/edisonv2lego.jpg
+    text: Edison Lego
+  - image: /img/tech-hero.jpg
+    text: Technology
 intro:
   blurbs:
     - image: /img/coffee.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+      text: >-
+        We carry the best robots on the markets at the most affordable rate. Our
+        robots are designed to engage children ages 4 all the way up to 16.
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
@@ -32,14 +35,5 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-slider:
-  - image1:
-      alt: A close-up of a paper filter filled with ground coffee
-      image: /img/products-grid3.jpg
-  - image2:
-      alt: A green cup of a coffee on a wooden table
-      image: /img/products-grid2.jpg
-  - image3:
-      alt: Coffee beans
-      image: /img/products-grid1.jpg
 ---
+
