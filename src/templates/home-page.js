@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const HomePageTemplate = ({ heading, subheading, intro, slider }) => (
+export const HomePageTemplate = ({ heading, subheading, intro, hero }) => (
   <section className="section section--gradient">
     <div className="container">
       <div className="section">
@@ -21,9 +21,8 @@ export default ({ data }) => {
     <HomePageTemplate
       heading={frontmatter.heading}
       subHeading={frontmatter.subHeading}
-      slider={frontmatter.hero}
+      hero={frontmatter.hero}
       intro={frontmatter.intro}
-      main={frontmatter.main}
     />
   )
 }
@@ -34,24 +33,14 @@ export const homePageQuery = graphql`
       frontmatter {
         heading
         subheading
+        hero {
+          image
+          text
+        }
         intro {
           blurbs {
             image
             text
-          }
-        }
-        hero {
-          image1 {
-            alt
-            image
-          }
-          image2 {
-            alt
-            image
-          }
-          image3 {
-            alt
-            image
           }
         }
       }

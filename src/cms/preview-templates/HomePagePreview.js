@@ -10,20 +10,6 @@ const HomePagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       subheading={entry.getIn(['data', 'subheading'])}
       intro={{ blurbs }}
-      slider={{
-        image1: {
-          image: getAsset(entry.getIn(['data', 'hero', 'image1', 'image'])),
-          alt: entry.getIn(['data', 'hero', 'image1', 'alt']),
-        },
-        image2: {
-          image: getAsset(entry.getIn(['data', 'hero', 'image2', 'image'])),
-          alt: entry.getIn(['data', 'hero', 'image2', 'alt']),
-        },
-        image3: {
-          image: getAsset(entry.getIn(['data', 'hero', 'image3', 'image'])),
-          alt: entry.getIn(['data', 'hero', 'image3', 'alt']),
-        },
-      }}
     />
   )
 }
