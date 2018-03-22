@@ -21,7 +21,7 @@ export default class Home extends React.Component {
     const page = posts.filter(
       post => post.node.frontmatter.templateKey === 'home-page'
     )[0].node.frontmatter
-    console.log(page)
+
     return (
       <main id="main">
         <Slider
