@@ -36,5 +36,28 @@ intro:
         We provide customer support on all of our orders. We also offer
         discounts for bulk orders. Please email our support team to find out
         more.
+mission:
+  check_list:
+    - text: ''
+  image: /img/about-img-1.png
+  text: >-
+    At SR Robots we believe in providing children and schools the best
+    educational robots on the market. We carefully vet each robot we sell to
+    make sure they meet three main criteria: Quality, Learning, and Fun
+
+
+    We are proud to support educators and schools to integrate robotics learning
+    into their yearly curriculum effortlessly through pre-made lesson plans and
+    projects. We are also proud to support parents looking for education-based
+    toys to catalyse their children’s learning and prepare them with the most
+    on-demand skills. 
+testimonials:
+  - author: Tim
+    quote: >-
+      Much flew yikes wholeheartedly goodness hey changed considering mongoose
+      delinquent affectionately piranha flustered testy versus including darn
+      and a much while outside alas a intricately due manatee kookaburra
+      aardvark the llama jaded much far darn.
+    title: Parent
 ---
 
