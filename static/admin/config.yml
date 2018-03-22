@@ -45,6 +45,19 @@ collections:
                 {label: Text, name: text, widget: text}
               ]}
             ]}
+          - {label: Mission, name: mission, widget: object, fields: [
+              {label: Text, name: text, widget: text},
+              {label: Image, name: image, widget: image},
+              {label: Check_List, name: check_list, widget: list, fields: [
+                {label: Image, name: image, widget: image},
+                {label: Text, name: text, widget: text}
+              ]}
+            ]}
+          - {label: Testimonials, name: testimonials, widget: list, fields: [
+              {label: Quote, name: quote, widget: string},
+              {label: Author, name: author, widget: string},
+              {label: Title, name: title, widget: string}
+            ]}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
