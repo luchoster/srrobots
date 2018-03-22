@@ -395,19 +395,6 @@ export const pageQuery = graphql`
                 text
               }
             }
-            mission {
-              image
-              text
-              check_list {
-                image
-                text
-              }
-            }
-            testimonials {
-              author
-              quote
-              title
-            }
           }
         }
       }
