@@ -57,10 +57,7 @@ export default class Home extends React.Component {
                   <div className="col-sm-4 col-xs-6 r-full-width">
                     <div className="scho-services-figure border-l-0">
                       <span className="scho-service-icon bg-1">
-                        <img
-                          src={require('../assets/imgs/school-services/img-01.png')}
-                          alt=""
-                        />
+                        <img src={page.intro.blurbs[0].image} alt="" />
                       </span>
                       <h4>
                         <a href="#">The Best Robots For Kids</a>
@@ -71,10 +68,7 @@ export default class Home extends React.Component {
                   <div className="col-sm-4 col-xs-6 r-full-width">
                     <div className="scho-services-figure">
                       <span className="scho-service-icon bg-2">
-                        <img
-                          src={require('../assets/imgs/school-services/img-02.png')}
-                          alt=""
-                        />
+                        <img src={page.intro.blurbs[1].image} alt="" />
                       </span>
                       <h4>
                         <a href="#">Happy Social Group</a>
@@ -85,11 +79,7 @@ export default class Home extends React.Component {
                   <div className="col-sm-4 col-xs-6 r-full-width">
                     <div className="scho-services-figure">
                       <span className="scho-service-icon bg-3">
-                        <img
-                          src={require('../assets/imgs/school-services/img-03.png')}
-                          src={page.intro.blurbs[2].image}
-                          alt=""
-                        />
+                        <img src={page.intro.blurbs[2].image} alt="" />
                       </span>
                       <h4>
                         <a href="#">We Love Math &amp; Drawing</a>
@@ -100,10 +90,7 @@ export default class Home extends React.Component {
                   <div className="col-sm-4 col-xs-6 r-full-width">
                     <div className="scho-services-figure">
                       <span className="scho-service-icon bg-4">
-                        <img
-                          src={require('../assets/imgs/school-services/img-04.png')}
-                          alt=""
-                        />
+                        <img src={page.intro.blurbs[3].image} alt="" />
                       </span>
                       <h4>
                         <a href="#">Learn With Best Teachers</a>
@@ -114,10 +101,7 @@ export default class Home extends React.Component {
                   <div className="col-sm-4 col-xs-6 r-full-width">
                     <div className="scho-services-figure">
                       <span className="scho-service-icon bg-5">
-                        <img
-                          src={require('../assets/imgs/school-services/img-05.png')}
-                          alt=""
-                        />
+                        <img src={page.intro.blurbs[4].image} alt="" />
                       </span>
                       <h4>
                         <a href="#">Happy Social Group</a>
@@ -128,10 +112,7 @@ export default class Home extends React.Component {
                   <div className="col-sm-4 col-xs-6 r-full-width">
                     <div className="scho-services-figure">
                       <span className="scho-service-icon bg-6">
-                        <img
-                          src={require('../assets/imgs/school-services/img-06.png')}
-                          alt=""
-                        />
+                        <img src={page.intro.blurbs[5].image} alt="" />
                       </span>
                       <h4>
                         <a href="#">We Love Math &amp; Drawing</a>
