@@ -1,44 +1,114 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import logo from '../assets/imgs/logo_small.png'
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
-        </Link>
+  <header id="header" className="header inner-header row d-none d-lg-flex">
+    {
+      <div className="top-bar col-sm-12">
+        <div className="container">
+          <div className="announcements">
+            <p>
+              <span />
+            </p>
+          </div>
+
+          <div className="topbar-address">
+            {/*<a className="addmissions-open" href="#"><i className="icon-star-full" />Addmissions Open</a>*/}
+            <p>
+              <span>Contact Us</span>(702) 514-0607, info@srrobots.com
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/home">
-          Home
-        </Link>
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
+    }
+
+    <div className="nav-holder col">
+      <div className="container">
+        <div className="p-relative has-layout">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
+          </div>
+
+          <nav className="navigation">
+            <a className="toggleMenu" href="#menu">
+              <i className="icon-navicon" />
+            </a>
+            <ul className="nav-list">
+              <li>
+                <Link className="color-1" to="/">
+                  home
+                </Link>
+              </li>
+              {/*<li>
+									<a className="color-3" href="classes.html">classes</a>
+									<ul>
+										<li><a href="classes.html">classes</a></li>
+										<li><a href="classes-2.html">classes 2</a></li>
+										<li><a href="classes-detail.html">classes Detail</a></li>
+									</ul>
+								</li>
+								<li className="active">
+									<a className="color-4" href="blog.html">blogs</a>
+									<ul>
+										<li><a href="blog.html">blog</a></li>
+										<li><a href="blog-detail.html">blog Detail</a></li>
+										<li><a href="blog-detail2.html">blog Detail 2</a></li>
+									</ul>
+								</li>
+                <li><a className="color-5" href="teams.html">teachers</a></li>*/}
+              <li>
+                <Link className="color-4" to="/shop">
+                  shop
+                </Link>
+              </li>
+              <li>
+                <Link className="color-3" to="/about">
+                  about us
+                </Link>
+              </li>
+              <li>
+                <Link className="color-2" to="/gallery">
+                  gallery
+                </Link>
+              </li>
+              {/*<li>
+									<a className="color-2" href="#">pages</a>
+									<ul>
+										<li><a href="about.html">about us</a></li>
+										<li><a href="gallery.html">gallery</a></li>
+										<li><a className="color-6" href="sceduled-events.html">timetable</a></li>
+									</ul>
+                </li>*/}
+              <li>
+                <Link className="color-7" to="/contact">
+                  contact us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to=""
+                  className="color-2 snipcart-add-item"
+                  data-item-id="1"
+                  data-item-name="Meet Edison"
+                  data-item-price="49.99"
+                  data-item-weight=".20"
+                  data-item-image="./assets/imgs/gallery/img-05.jpg"
+                  data-item-url="/"
+                  data-item-description="Meet Edison Robot"
+                >
+                  buy it
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </nav>
+  </header>
 )
 
 export default Navbar
