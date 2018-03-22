@@ -22,6 +22,7 @@ export default class Home extends React.Component {
       post => post.node.frontmatter.templateKey === 'home-page'
     )[0].node.frontmatter
 
+    console.log(page)
     return (
       <main id="main">
         <Slider
@@ -164,19 +165,19 @@ export default class Home extends React.Component {
         </section>
 
         {/* About Nersery */}
-        <section class="tc-padding">
-          <div class="container">
-            <div class="row">
+        <section className="tc-padding">
+          <div className="container">
+            <div className="row">
               {/* About Img */}
-              <div class="about-img">
+              <div className="about-img">
                 <img src={require('../assets/imgs/about-img-1.png')} alt="" />
               </div>
               {/* About Img */}
 
               {/* About Text */}
-              <div class="col-lg-6 col-md-7 pull-right">
-                <div class="about-text">
-                  <h3 class="curve-heading">About Nersery</h3>
+              <div className="col-lg-6 col-md-7 pull-right">
+                <div className="about-text">
+                  <h3 className="curve-heading">About Nersery</h3>
                   <h4>
                     Steadfast vulgarly alas showed until caterpillar tiger did
                     stopped alas visually aardvark dove dear this joyful egret
@@ -194,7 +195,7 @@ export default class Home extends React.Component {
                     imperative other classic while dull bearishly sulky near
                     more while much wow.
                   </p>
-                  <ul class="check-list">
+                  <ul className="check-list">
                     <li>Beautiful Class Rooms</li>
                     <li>Lush Play Ground</li>
                     <li>Secure Building</li>
@@ -354,27 +355,6 @@ export default class Home extends React.Component {
     )
   }
 }
-
-const homePageQuery = graphql`
-  query HomePage($id: String!) {
-    markdownRemark(id: { eq: "Home" }) {
-      frontmatter {
-        heading
-        subheading
-        hero {
-          image
-          text
-        }
-        intro {
-          blurbs {
-            image
-            text
-          }
-        }
-      }
-    }
-  }
-`
 
 export const pageQuery = graphql`
   query IndexQuery {
