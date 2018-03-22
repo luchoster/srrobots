@@ -1,5 +1,4 @@
 import React from 'react'
-import Pricing from '../components/Pricing'
 
 export const HomePageTemplate = ({ heading, subheading, intro, slider }) => (
   <section className="section section--gradient">
@@ -7,7 +6,7 @@ export const HomePageTemplate = ({ heading, subheading, intro, slider }) => (
       <div className="section">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="content" />
+            <div className="content">{heading}</div>
           </div>
         </div>
       </div>

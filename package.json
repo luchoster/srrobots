@@ -4,7 +4,9 @@
   "version": "1.1.0",
   "author": "Austin Green",
   "dependencies": {
+    "animate.css": "^3.6.1",
     "bulma": "^0.6.0",
+    "font-awesome": "^4.7.0",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-netlify-cms": "^1.0.9",
@@ -17,7 +19,8 @@
     "gatsby-transformer-sharp": "^1.6.21",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-slick": "^0.21.0"
   },
   "keywords": [
     "gatsby"
