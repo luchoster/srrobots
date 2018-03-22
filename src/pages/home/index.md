@@ -37,7 +37,14 @@ intro:
         discounts for bulk orders. Please email our support team to find out
         more.
 mission:
-  check_list: []
+  check_list:
+    - text: Affordable Robots
+    - text: Powerful and fun learning
+    - text: Pre-made Lesson Plans
+    - text: Project Plans
+    - text: 1 year warranty on all robots
+    - text: Better learning for all learning styles
+    - text: Reliable Customer Support
   image: /img/about-img-1.png
   text: >-
     At SR Robots we believe in providing children and schools the best
