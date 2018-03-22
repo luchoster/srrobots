@@ -37,8 +37,7 @@ intro:
         discounts for bulk orders. Please email our support team to find out
         more.
 mission:
-  check_list:
-    - text: ''
+  check_list: []
   image: /img/about-img-1.png
   text: >-
     At SR Robots we believe in providing children and schools the best
