@@ -6,7 +6,7 @@ sku: ed01
 price: '29.99'
 prod_image: /img/edcreatebagandcontents.jpg
 ---
-#### About The EdCreate – Edison Robot Creator’s Kit
+## About The EdCreate – Edison Robot Creator’s Kit
 
 The EdCreate Edison robot creator’s kit is a 5-in-1 expansion pack construction system. Designed to work with the Edison robot, EdCreate enriches students’ STEM education experience through interactive engineering and programming projects.
 
