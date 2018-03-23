@@ -1,4 +1,5 @@
 ---
+name: MeetEdison
 sku: me01
 price: '49.99'
 image: /img/img-05.jpg
