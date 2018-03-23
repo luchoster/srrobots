@@ -177,7 +177,9 @@ export default class Home extends React.Component {
               <div className="col-lg-6 col-md-7 pull-right">
                 <div className="about-text">
                   <h3 className="curve-heading">About Sr. Robots</h3>
-                  <p>{page.mission.text}</p>
+                  <div
+                    dangerouslySetInnerHTML={createMarkup(page.mission.text)}
+                  />
                   <ul className="check-list">
                     {mapIndexed((item, index) => (
                       <li key={index}>{item.text}</li>
