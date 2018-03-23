@@ -85,7 +85,7 @@ export const ProductPostTemplate = ({
                       data-item-price={price}
                       data-item-weight=".20"
                       data-item-image={prod_image}
-                      data-item-url="https://srrobots.netlify.com/"
+                      data-item-url={`https://srrobots.netlify.com/_products/${slug}`}
                       data-item-description={title}
                     >
                       Add to Cart
@@ -191,6 +191,7 @@ export default props => {
       prod_image={post.frontmatter.prod_image}
       price={post.frontmatter.price}
       sku={post.frontmatter.sku}
+      slug={post.frontmatter.slug}
     />
   )
 }
