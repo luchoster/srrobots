@@ -1,4 +1,5 @@
 import * as R from 'ramda'
+import Marked from 'marked'
 
 const notEmpty = R.complement(R.isEmpty)
 
@@ -16,6 +17,11 @@ const createMarkup = content => {
   return { __html: content }
 }
 
+const rawMarkup = data => {
+  let rawMarkup = Marked(data, { sanitize: true })
+  return { __html: rawMarkup }
+}
+
 export {
   createMarkup,
   notEmpty,
@@ -24,4 +30,5 @@ export {
   nilOrEmpty,
   notNilOrEmpty,
   mapIndexed,
+  rawMarkup,
 }
