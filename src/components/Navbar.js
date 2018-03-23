@@ -96,8 +96,8 @@ const Navbar = () => (
                   data-item-name="Meet Edison"
                   data-item-price="49.99"
                   data-item-weight=".20"
-                  data-item-image="./assets/imgs/gallery/img-05.jpg"
-                  data-item-url="/"
+                  data-item-image="../assets/imgs/gallery/img-05.jpg"
+                  data-item-url="https://srrobots.netlify.com/"
                   data-item-description="Meet Edison Robot"
                 >
                   buy it

@@ -2,15 +2,33 @@ backend:
   name: git-gateway
   branch: master
 
+display_url: https://srrobots.netlify.com/
 media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "products"
+    label: "Products"
+    folder: "src/_products"
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "SKU", name: "sku", widget: "string" }
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Slug", name: "slug", widget: "string" }
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-details"}
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
@@ -20,6 +38,8 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    editor:
+      preview: false
     files:
       - file: "src/pages/about/index.md"
         label: "About"

@@ -12,6 +12,7 @@ import {
 } from 'material-ui'
 import MenuIcon from 'material-ui-icons/Menu'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import ReactTouchTap from 'react-tap-event-plugin'
 import './all.sass'
 
@@ -63,6 +64,7 @@ class TemplateWrapper extends React.Component {
         </Drawer>
         <Navbar />
         <div>{this.props.children()}</div>
+        <Footer />
       </div>
     )
   }
