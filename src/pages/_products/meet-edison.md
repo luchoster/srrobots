@@ -6,7 +6,7 @@ sku: me01
 price: '49.99'
 prod_image: /img/img-05.jpg
 ---
-##### More than just a robot
+## More than just a robot
 
 Engage your students with Edison, the programable robot.
 
