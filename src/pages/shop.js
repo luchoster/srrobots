@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import { mapIndexed } from '../lib/helpers'
 import Hero from '../assets/imgs/inner-banners/img-04.jpg'
 
@@ -50,7 +51,6 @@ export default class ShopPageTemplate extends React.Component {
                         <figure>
                           <img src={item.node.frontmatter.prod_image} alt="" />
                           <div className="overlay">
-                            {console.log(item)}
                             <a
                               href=""
                               className="tc-btn snipcart-add-item position-center-center"
@@ -70,13 +70,15 @@ export default class ShopPageTemplate extends React.Component {
                             </a>
                           </div>
                         </figure>
-                        <div className="detail">
-                          <h3>{item.node.frontmatter.title}</h3>
+                        <Link to={`/_products/${item.node.frontmatter.slug}`}>
+                          <div className="detail">
+                            <h3>{item.node.frontmatter.title}</h3>
 
-                          <div className="product-rate">
-                            $ {item.node.frontmatter.price}
+                            <div className="product-rate">
+                              $ {item.node.frontmatter.price}
+                            </div>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                     </div>
                   ))(products)}
@@ -95,7 +97,7 @@ export default class ShopPageTemplate extends React.Component {
 
 export const ProdQuery = graphql`
   query ProdQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___sku] }) {
       edges {
         node {
           html
