@@ -65,5 +65,14 @@ testimonials:
       and a much while outside alas a intricately due manatee kookaburra
       aardvark the llama jaded much far darn.
     title: Parent
+bottom_gallery:
+  - image: /img/img-01.jpg
+  - image: /img/img-02.jpg
+  - image: /img/img-03.jpg
+  - image: /img/img-04.jpg
+  - image: /img/img-05.jpg
+  - image: /img/img-06.jpg
+  - image: /img/img-07.jpg
+  - image: /img/img-08.jpg
 ---
 
