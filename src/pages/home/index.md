@@ -67,12 +67,20 @@ testimonials:
     title: Parent
 bottom_gallery:
   - image: /img/img-01.jpg
+    text: IR Sensors
   - image: /img/img-02.jpg
+    text: Fight Mode
   - image: /img/img-03.jpg
+    text: Small Design
   - image: /img/img-04.jpg
+    text: Light Sensor
   - image: /img/img-05.jpg
+    text: Lego Compatible
   - image: /img/img-06.jpg
+    text: Sound Sensor
   - image: /img/img-07.jpg
+    text: Proximity Sensor
   - image: /img/img-08.jpg
+    text: Customizable
 ---
 
