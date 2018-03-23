@@ -15,12 +15,13 @@ collections:
     editor:
       preview: false
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-details"}
+      - {label: "Name", name: "name", widget: "string" }
       - {label: "SKU", name: "sku", widget: "string" }
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Slug", name: "slug", widget: "string" }
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-details"}
 
   - name: "blog"
     label: "Blog"
