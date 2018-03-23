@@ -9,19 +9,19 @@ public_folder: /img
 collections:
   - name: "_products"
     label: "Products"
-    folder: "src/_products"
+    folder: "src/pages/_products"
     slug: "{{slug}}"
     create: true
     editor:
       preview: false
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-details"}
-      - {label: Name, name: name, widget: string }
-      # - {label: "SKU", name: "sku", widget: "string" }
-      # - {label: "Price", name: "price", widget: "number"}
-      # - {label: "Image", name: "image", widget: "image"}
-      # - {label: "Body", name: "body", widget: "markdown"}
-      # - {label: "Slug", name: "slug", widget: "string" }
+      - {label: "Product Name", name: "title", widget: string }
+      - {label: "Slug", name: "slug", widget: "string" }
+      - {label: "SKU", name: "sku", widget: "string" }
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Image", name: "prod_image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "blog"
     label: "Blog"
