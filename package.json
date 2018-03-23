@@ -18,11 +18,14 @@
     "gatsby-source-filesystem": "^1.5.23",
     "gatsby-transformer-remark": "^1.7.33",
     "gatsby-transformer-sharp": "^1.6.21",
+    "material-ui": "next",
+    "material-ui-icons": "^1.0.0-beta.17",
     "prop-types": "^15.6.0",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-slick": "^0.21.0",
+    "react-tap-event-plugin": "^3.0.2",
     "slick-carousel": "^1.8.1"
   },
   "keywords": [
