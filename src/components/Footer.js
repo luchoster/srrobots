@@ -27,7 +27,9 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <p>&copy; Copyright {new Date().year} | All Rights Reserved</p>
+          <p>
+            &copy; Copyright {new Date().getFullYear()} | All Rights Reserved
+          </p>
         </div>
       </div>
     </div>

@@ -225,12 +225,6 @@ export default class Home extends React.Component {
                         <h3>{item.author}</h3>
                         <span>{item.title && item.title}</span>
                       </div>
-                      <div className="img">
-                        <img
-                          src="assets/images/s-teacher-imgs/img-01.jpg"
-                          alt=""
-                        />
-                      </div>
                     </div>
                   ))(page.testimonials)}
                 </Slider>
@@ -250,126 +244,23 @@ export default class Home extends React.Component {
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width">
-                <figure className="gallery-figure rotate-1">
-                  <img
-                    src={require('../assets/imgs/gallery/img-01.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width">
-                <figure className="gallery-figure">
-                  <img
-                    src={require('../assets/imgs/gallery/img-02.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width">
-                <figure className="gallery-figure rotate-1">
-                  <img
-                    src={require('../assets/imgs/gallery/img-03.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width">
-                <figure className="gallery-figure">
-                  <img
-                    src={require('../assets/imgs/gallery/img-04.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width">
-                <figure className="gallery-figure rotate-2">
-                  <img
-                    src={require('../assets/imgs/gallery/img-05.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width">
-                <figure className="gallery-figure rotate-1">
-                  <img
-                    src={require('../assets/imgs/gallery/img-06.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width d-none d-sm-block">
-                <figure className="gallery-figure rotate-2">
-                  <img
-                    src={require('../assets/imgs/gallery/img-07.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="col-sm-4 col-md-3 col-xs-6 r-full-width d-none d-sm-block">
-                <figure className="gallery-figure rotate-1">
-                  <img
-                    src={require('../assets/imgs/gallery/img-08.jpg')}
-                    alt=""
-                  />
-                  <figcaption className="overlay">
-                    <h4 className="position-center-center">
-                      <a href="gallery.html">
-                        School Kids Playing in Classroom
-                      </a>
-                    </h4>
-                  </figcaption>
-                </figure>
-              </div>
+              {mapIndexed((item, index) => (
+                <div
+                  className="col-sm-4 col-md-3 col-xs-6 r-full-width"
+                  key={index}
+                >
+                  <figure
+                    className={`gallery-figure rotate-${R.modulo(index, 3)}`}
+                  >
+                    <img src={item.image} alt="" />
+                    <figcaption className="overlay">
+                      <h4 className="position-center-center">
+                        <a href="gallery.html">{item.text}</a>
+                      </h4>
+                    </figcaption>
+                  </figure>
+                </div>
+              ))(page.bottom_gallery)}
             </div>
           </div>
         </section>
@@ -409,6 +300,10 @@ export const pageQuery = graphql`
               author
               quote
               title
+            }
+            bottom_gallery {
+              image
+              text
             }
           }
         }

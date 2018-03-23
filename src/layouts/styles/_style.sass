@@ -784,9 +784,11 @@ ul
 .nav-list > li
   float: left
   position: relative
+  transition: all .25s ease
   &:first-child
     margin: 0
   > a
+    transition: all .5s ease
     font-size: 26px
     padding: 14px 20px
     letter-spacing: -1px
@@ -1146,6 +1148,7 @@ ul
   text-align: center
   line-height: 130px
   display: inline-block
+  transition: all .25s ease
   &.style-2
     top: -65px
     background: #fff
@@ -1341,7 +1344,7 @@ ul
 .check-list li
   float: left
   width: 50%
-  font-size: 22px
+  font-size: 18px
   color: #282828
   font-family: 'Itim', cursive
   margin: 8px 0
@@ -1351,9 +1354,10 @@ ul
     content: "\f005"
     float: left
     font-family: FontAwesome
-    font-size: 40px
-    margin: 0 20px 0 0
+    font-size: 30px
+    margin: 0 10px 0 0
     color: #ff9100
+    transition: all .5s ease
   &:hover::before
     color: #282828
 
@@ -1769,15 +1773,15 @@ ul
   position: relative
   border: 5px solid #fff
   margin: 15px 0
-  -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.3)
-  -moz-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.3)
   box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.3)
+  transition: all 0.5s ease
   > img
     width: 100%
   .overlay
     background: rgba(96, 96, 96, 0.8)
     visibility: hidden
     opacity: 0
+    transition: all 0.35s ease
   &:hover .overlay
     visibility: visible
     opacity: 1

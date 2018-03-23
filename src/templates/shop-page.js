@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const HomePageTemplate = ({ heading, subheading, intro, hero }) => (
+export const ShopPageTemplate = ({ heading, subheading, intro, hero }) => (
   <section className="section section--gradient">
     <div className="container">
       <div className="section">
@@ -18,7 +18,7 @@ export default ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <HomePageTemplate
+    <ShopPageTemplate
       heading={frontmatter.heading}
       subHeading={frontmatter.subHeading}
       hero={frontmatter.hero}
@@ -27,8 +27,8 @@ export default ({ data }) => {
   )
 }
 
-export const ProdPageQuery = graphql`
-  query ProdPage($id: String!) {
+export const ShopPageQuery = graphql`
+  query ShopPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         heading
