@@ -2,7 +2,7 @@ import * as R from 'ramda'
 import React from 'react'
 import Link from 'gatsby-link'
 import Slider from 'react-slick'
-import { notNilOrEmpty, mapIndexed } from '../lib/helpers'
+import { notNilOrEmpty, mapIndexed, createMarkup } from '../lib/helpers'
 import ParallaxBg1 from '../assets/imgs/parallax-1.png'
 
 export default class Home extends React.Component {
@@ -22,7 +22,6 @@ export default class Home extends React.Component {
       post => post.node.frontmatter.templateKey === 'home-page'
     )[0].node.frontmatter
 
-    console.log(page)
     return (
       <main id="main">
         <Slider
@@ -170,39 +169,19 @@ export default class Home extends React.Component {
             <div className="row">
               {/* About Img */}
               <div className="about-img">
-                <img src={require('../assets/imgs/about-img-1.png')} alt="" />
+                <img src={page.mission.image} alt="" />
               </div>
               {/* About Img */}
 
               {/* About Text */}
               <div className="col-lg-6 col-md-7 pull-right">
                 <div className="about-text">
-                  <h3 className="curve-heading">About Nersery</h3>
-                  <h4>
-                    Steadfast vulgarly alas showed until caterpillar tiger did
-                    stopped alas visually aardvark dove dear this joyful egret
-                    inconsiderate crud.
-                  </h4>
-                  <p>
-                    Until on ouch neat vindictively steadfast vulgarly alas
-                    showed until caterpillar tiger did stopped alas visually
-                    aardvark dove dear this joyful egret inconsiderate crud.
-                    Creepy one much mallard natural crucially dog tranquil
-                    meadowlark yikes that more across much
-                  </p>
-                  <p>
-                    far aboard the futile ostrich and highhanded beyond
-                    imperative other classic while dull bearishly sulky near
-                    more while much wow.
-                  </p>
+                  <h3 className="curve-heading">About Sr. Robots</h3>
+                  <p>{page.mission.text}</p>
                   <ul className="check-list">
-                    <li>Beautiful Class Rooms</li>
-                    <li>Lush Play Ground</li>
-                    <li>Secure Building</li>
-                    <li>Gaming Room</li>
-                    <li>Pick and Drop</li>
-                    <li>Breakfast - Lunch</li>
-                    <li>Sports Activities</li>
+                    {mapIndexed((item, index) => (
+                      <li key={index}>{item.text}</li>
+                    ))(page.mission.check_list)}
                   </ul>
                 </div>
               </div>
@@ -374,6 +353,18 @@ export const pageQuery = graphql`
                 image
                 text
               }
+            }
+            mission {
+              image
+              text
+              check_list {
+                text
+              }
+            }
+            testimonials {
+              author
+              quote
+              title
             }
           }
         }
