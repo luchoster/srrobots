@@ -2,10 +2,16 @@ import * as R from 'ramda'
 import React from 'react'
 import Link from 'gatsby-link'
 import Slider from 'react-slick'
-import { notNilOrEmpty, mapIndexed, createMarkup } from '../lib/helpers'
+import Marked from 'marked'
+import { notNilOrEmpty, mapIndexed } from '../lib/helpers'
 import ParallaxBg1 from '../assets/imgs/parallax-1.png'
 
 export default class Home extends React.Component {
+  rawMarkup = data => {
+    let rawMarkup = Marked(data, { sanitize: true })
+    return { __html: rawMarkup }
+  }
+
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -178,7 +184,7 @@ export default class Home extends React.Component {
                 <div className="about-text">
                   <h3 className="curve-heading">About Sr. Robots</h3>
                   <div
-                    dangerouslySetInnerHTML={createMarkup(page.mission.text)}
+                    dangerouslySetInnerHTML={this.rawMarkup(page.mission.text)}
                   />
                   <ul className="check-list">
                     {mapIndexed((item, index) => (
