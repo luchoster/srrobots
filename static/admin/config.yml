@@ -7,7 +7,7 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "products"
+  - name: "_products"
     label: "Products"
     folder: "src/_products"
     slug: "{{slug}}"
