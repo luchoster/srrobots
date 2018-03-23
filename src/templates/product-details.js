@@ -80,13 +80,13 @@ export const ProductPostTemplate = ({
                     <a
                       href=""
                       className="tc-btn snipcart-add-item"
-                      data-item-id="1"
-                      data-item-name="Meet Edison"
-                      data-item-price="49.99"
+                      data-item-id={sku}
+                      data-item-name={title}
+                      data-item-price={price}
                       data-item-weight=".20"
                       data-item-image={prod_image}
                       data-item-url="https://srrobots.netlify.com/"
-                      data-item-description="Meet Edison Robot"
+                      data-item-description={title}
                     >
                       Add to Cart
                     </a>
