@@ -39,12 +39,12 @@ intro:
 mission:
   check_list:
     - text: Affordable Robots
-    - text: Powerful and fun learning
-    - text: Pre-made Lesson Plans
     - text: Project Plans
+    - text: Pre-made Lesson Plans
+    - text: Powerful and fun learning
     - text: 1 year warranty on all robots
-    - text: Better learning for all learning styles
     - text: Reliable Customer Support
+    - text: Better learning for all learning styles
   image: /img/about-img-1.png
   text: >-
     At SR Robots we believe in providing children and schools the best
