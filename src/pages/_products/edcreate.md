@@ -1,7 +1,7 @@
 ---
 templateKey: product-details
 title: EdCreate
-slug: ed-create
+slug: edcreate
 sku: '301'
 price: '29.99'
 prod_image: /img/edcreatebagandcontents.jpg
