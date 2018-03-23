@@ -5,6 +5,7 @@ import Slider from 'react-slick'
 import Marked from 'marked'
 import { notNilOrEmpty, mapIndexed } from '../lib/helpers'
 import ParallaxBg1 from '../assets/imgs/parallax-1.png'
+import TestimonialsBG from '../assets/imgs/testimonial-bg.jpg'
 
 export default class Home extends React.Component {
   rawMarkup = data => {
@@ -200,10 +201,46 @@ export default class Home extends React.Component {
         {/* About Nersery */}
 
         {/* Testimonials */}
+        <section
+          className="testimonial-holder"
+          style={{
+            background: `url(${TestimonialsBG}) no-repeat center bottom`,
+          }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-offset-1 col-lg-10">
+                <h3 className="curve-heading">Happy Customers</h3>
+                <span className="search-lable">
+                  <i className="icon-quotes-left" />
+                </span>
+                <Slider
+                  id="testimonials-slider"
+                  className="testimonial-slider after-clear"
+                >
+                  {mapIndexed((item, index) => (
+                    <div className="text" key={index}>
+                      <p>{item.quote}</p>
+                      <div className="aurthor-name">
+                        <h3>{item.author}</h3>
+                        <span>{item.title && item.title}</span>
+                      </div>
+                      <div className="img">
+                        <img
+                          src="assets/images/s-teacher-imgs/img-01.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  ))(page.testimonials)}
+                </Slider>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Testimonials */}
 
         {/* Gallery */}
-        {/*
         <section className="tc-padding">
           <div className="container">
             <div className="main-heading-holder">
@@ -336,8 +373,7 @@ export default class Home extends React.Component {
             </div>
           </div>
         </section>
-        /* }
-        { /* /Gallery */}
+        {/* /Gallery */}
       </main>
     )
   }

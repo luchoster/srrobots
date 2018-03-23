@@ -37,7 +37,7 @@ collections:
           - {label: SubHeading, name: subheading, widget: string}
           - {label: Slider, name: hero, widget: list, fields: [
               {label: Image, name: image, widget: image},
-              {label: Text, name: text, widget: text}
+              {label: Text, name: text, widget: string}
             ]}
           - {label: Intro, name: intro, widget: object, fields: [
               {label: Blurbs, name: blurbs, widget: list, fields: [
@@ -56,6 +56,10 @@ collections:
               {label: Quote, name: quote, widget: string},
               {label: Author, name: author, widget: string},
               {label: Title, name: title, widget: string}
+            ]}
+          - {label: Bottom Gallery, name: bottom_gallery, widget: list, fields: [
+              {label: Image, name: image, widget: image},
+              {label: Text, name: text, widget: string}
             ]}
       - file: "src/pages/products/index.md"
         label: "Products Page"
