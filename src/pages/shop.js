@@ -50,6 +50,7 @@ export default class ShopPageTemplate extends React.Component {
                         <figure>
                           <img src={item.node.frontmatter.prod_image} alt="" />
                           <div className="overlay">
+                            {console.log(item)}
                             <a
                               href=""
                               className="tc-btn snipcart-add-item position-center-center"
@@ -99,11 +100,12 @@ export const ProdQuery = graphql`
         node {
           html
           frontmatter {
-            templateKey
-            title
-            slug
             price
             prod_image
+            slug
+            sku
+            templateKey
+            title
           }
         }
       }
