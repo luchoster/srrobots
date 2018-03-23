@@ -99,7 +99,7 @@ export const ProductPostTemplate = ({
                       </li>
                       <li>
                         <a className="tc-btn shadow-0 twitter" href="#">
-                          <i className="icon-twitter" />Share on Twiiter
+                          <i className="icon-twitter" />Share on Twitter
                         </a>
                       </li>
                       <li>

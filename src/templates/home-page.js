@@ -2,15 +2,7 @@ import React from 'react'
 
 export const HomePageTemplate = ({ heading, subheading, intro, hero }) => (
   <section className="section section--gradient">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="content">{heading}</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div className="content">{heading}</div>
   </section>
 )
 
@@ -27,8 +19,8 @@ export default ({ data }) => {
   )
 }
 
-export const ProdPageQuery = graphql`
-  query ProdPage($id: String!) {
+export const HomePageQuery = graphql`
+  query HomePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         heading
