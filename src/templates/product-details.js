@@ -190,6 +190,7 @@ export default props => {
       title={post.frontmatter.title}
       prod_image={post.frontmatter.prod_image}
       price={post.frontmatter.price}
+      sku={post.frontmatter.sku}
     />
   )
 }
