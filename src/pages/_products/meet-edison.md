@@ -4,7 +4,7 @@ title: Meet Edison
 slug: meet-edison
 sku: '1'
 price: '49.99'
-prod_image: /img/img-05.jpg
+prod_image: /img/edisonv2topside.jpg
 ---
 ## More than just a robot
 
