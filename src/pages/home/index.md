@@ -47,7 +47,7 @@ mission:
     - text: Better learning for all learning styles
   image: /img/about-img-1.png
   text: >-
-    ## At SR Robots we believe in providing children and schools the best
+    #### At SR Robots we believe in providing children and schools the best
     educational robots on the market. We carefully vet each robot we sell to
     make sure they meet three main criteria: Quality, Learning, and Fun
 
