@@ -88,21 +88,6 @@ const Navbar = () => (
                   contact us
                 </Link>
               </li>
-              <li>
-                <Link
-                  to=""
-                  className="color-2 snipcart-add-item"
-                  data-item-id="1"
-                  data-item-name="Meet Edison"
-                  data-item-price="49.99"
-                  data-item-weight=".20"
-                  data-item-image="../assets/imgs/gallery/img-05.jpg"
-                  data-item-url="https://srrobots.netlify.com/"
-                  data-item-description="Meet Edison Robot"
-                >
-                  buy it
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>
