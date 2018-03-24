@@ -16,7 +16,7 @@ export const AboutPageTemplate = ({
       <section className="about-holder tc-padding">
         <div className="container">
           <div className="about-content has-layout">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-sm-6">
                 <div className="about-img-2">
                   <img src={top_image} alt="" />
