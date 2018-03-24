@@ -127,6 +127,8 @@ export const aboutPageQuery = graphql`
         subheading
         title
         top_image
+        vision
+        mission
       }
     }
   }
