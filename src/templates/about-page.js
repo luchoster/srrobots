@@ -3,7 +3,8 @@ import Content, { HTMLContent } from '../components/Content'
 import Logo from '../assets/imgs/logo_small.png'
 
 export const AboutPageTemplate = ({
-  missionText,
+  mission_text,
+  vision_text,
   subheading,
   title,
   top_image,
@@ -65,7 +66,9 @@ export const AboutPageTemplate = ({
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="about-text has-layout">
                     <h3>Our Mission</h3>
-                    <h4>{missionText}</h4>
+                    <h4>{mission_text}</h4>
+                    <h3>Our Vision</h3>
+                    <h4>{vision_text}</h4>
                   </div>
                 </div>
                 {/* About Text */}
@@ -115,7 +118,8 @@ export default ({ data }) => {
       content={post.html}
       subheading={post.frontmatter.subheading}
       top_image={post.frontmatter.top_image}
-      missionText={post.frontmatter.missionText}
+      mission_text={post.frontmatter.missionText}
+      vision_text={post.frontmatter.visionText}
     />
   )
 }
@@ -129,6 +133,7 @@ export const aboutPageQuery = graphql`
         title
         top_image
         missionText
+        visionText
       }
     }
   }
