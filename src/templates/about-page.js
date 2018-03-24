@@ -1,5 +1,6 @@
 import React from 'react'
 import Content, { HTMLContent } from '../components/Content'
+import Logo from '../assets/imgs/logo_small.png'
 
 export const AboutPageTemplate = ({
   subheading,
@@ -17,11 +18,15 @@ export const AboutPageTemplate = ({
           <div className="about-content has-layout">
             <div className="row">
               <div className="col-sm-6">
-                <div className="about-img-2" />
+                <div className="about-img-2">
+                  <img src={top_image} alt="" />
+                </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="about-text style-2">
                   <h5>{subheading}</h5>
+                  <h3>{title}</h3>
+                  <PageContent content={content} className="content" />
                   <div className="kids-img has-layout">
                     <ul>
                       <li>
@@ -55,7 +60,7 @@ export const AboutPageTemplate = ({
             </div>
             <div className="session-news curve-down style-2 has-layout">
               <span className="scho-service-icon style-2">
-                <img src={top_image} alt="" />
+                <img src={Logo} alt="" />
               </span>
               <img src={require('../assets/imgs/about-img-2.jpg')} alt="" />
               <div className="news-caption position-center-x">
