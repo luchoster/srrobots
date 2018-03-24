@@ -50,8 +50,8 @@ collections:
           - {label: "Sub Heading", name: subheading, widget: string}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Top Section Image", name: "top_image", widget: image}
+          - {label: "Our Mission", name: "mission_text", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Our Mission", name: "mission", widget: string}
       - file: "src/pages/home/index.md"
         label: "Home Page"
         name: "home"
