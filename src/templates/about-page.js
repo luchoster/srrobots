@@ -1,10 +1,13 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import Logo from '../assets/imgs/logo_small.png'
+import HelloRobot from '../assets/imgs/hello_robot.jpg'
+import FutureRobot from '../assets/imgs/future-robot.jpg'
+import PlayingWRobot from '../assets/imgs/kid-playing-robot.jpg'
 
 export const AboutPageTemplate = ({
-  mission_text,
-  vision_text,
+  mission_section,
   subheading,
   title,
   top_image,
@@ -61,14 +64,14 @@ export const AboutPageTemplate = ({
               </div>
             </div>
             <div className="our-mission-holder">
-              <div className="row">
+              <div className="row align-items-center">
                 {/* About Text */}
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="about-text has-layout">
                     <h3>Our Mission</h3>
-                    <h4>{mission_text}</h4>
+                    <h4>{mission_section.missionText}</h4>
                     <h3>Our Vision</h3>
-                    <h4>{vision_text}</h4>
+                    <h4>{mission_section.visionText}</h4>
                   </div>
                 </div>
                 {/* About Text */}
@@ -76,29 +79,10 @@ export const AboutPageTemplate = ({
                 {/* About Img */}
                 <div className="col-sm-6">
                   <div className="our-mission">
-                    <img src="assets/images/our-mission.png" alt="" />
+                    <img src={mission_section.section_image} alt="" />
                   </div>
                 </div>
                 {/* About Img */}
-              </div>
-            </div>
-            <div className="session-news curve-down style-2 has-layout">
-              <span className="scho-service-icon style-2">
-                <img src={Logo} alt="" />
-              </span>
-              <img src={require('../assets/imgs/about-img-2.jpg')} alt="" />
-              <div className="news-caption position-center-x">
-                <h4>Session 2017 Addmission Open</h4>
-                <p>
-                  Welcome to KG daycare, preschool, and kindergarten How to
-                  Enroll Your Child to a Class?
-                </p>
-              </div>
-              <div className="enroll-now">
-                <p>Get started today!</p>
-                <a className="tc-btn" href="https://shop.srrobots.com/">
-                  Buy Now
-                </a>
               </div>
             </div>
           </div>
@@ -118,8 +102,7 @@ export default ({ data }) => {
       content={post.html}
       subheading={post.frontmatter.subheading}
       top_image={post.frontmatter.top_image}
-      mission_text={post.frontmatter.missionText}
-      vision_text={post.frontmatter.visionText}
+      mission_section={post.frontmatter.mission_section}
     />
   )
 }
@@ -132,8 +115,11 @@ export const aboutPageQuery = graphql`
         subheading
         title
         top_image
-        missionText
-        visionText
+        mission_section {
+          missionText
+          visionText
+          section_image
+        }
       }
     }
   }

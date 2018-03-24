@@ -44,7 +44,7 @@ body
   background: #fff
   font-size: 14px
   color: #464a5a
-  font-family: 'Varela Round', sans-serif
+  font-family: 'Varela Round', sans-serif !important
   h1, h2, h3, h4, h5, h6
     margin: 0 0 20px
     font-family: 'Itim', cursive
@@ -1052,13 +1052,15 @@ ul
   border-top: 1px solid rgba(0, 0, 0, 0.1)
 
 .services-figure
-  padding: 60px 0 0
   text-align: center
   position: relative
   border-radius: 0 0 8px 8px
+  background-size: cover !important
+  height: 500px
   figcaption
     display: block
-    margin: 0 0 30px
+    padding: 10px 0
+    width: 100%
     span
       font-size: 15px
       color: #fff
@@ -4398,7 +4400,7 @@ ul
 .our-mission-holder
   background: #474747
   .about-text
-    padding: 70px 0 0 40px
+    padding: 70px 40px
   h4
     color: #fff
   h3
