@@ -106,7 +106,6 @@ export const aboutPageQuery = graphql`
         subheading
         title
         top_image
-        mission_text
       }
     }
   }
