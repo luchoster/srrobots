@@ -2,7 +2,9 @@
 templateKey: about-page
 subheading: Robots for everyone
 title: Who We Are?
-missionText: blah
+missionText: >-
+  Our mission is to place educational robots in schools and homes around the
+  world to positively impact the lives of children through learning.
 top_image: /img/r-heart-bot.png
 ---
 #### Sr. Robots is a leading educational robot distribution company. We believe in providing children and schools the best educational robots on the market. We carefully vet each robot we sell to make sure they meet three main criteria: Quality, Learning, and of course, Fun.
