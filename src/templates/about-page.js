@@ -3,6 +3,8 @@ import Content, { HTMLContent } from '../components/Content'
 import Logo from '../assets/imgs/logo_small.png'
 
 export const AboutPageTemplate = ({
+  our_mission,
+  our_vision,
   subheading,
   title,
   top_image,
@@ -58,6 +60,29 @@ export const AboutPageTemplate = ({
                 </div>
               </div>
             </div>
+            <div className="our-mission-holder">
+              <div className="row align-items-center">
+                {/* About Text */}
+                <div className="col-lg-6 col-md-6 col-sm-12">
+                  <div className="about-text has-layout">
+                    <h3>Our Mission</h3>
+                    <h4>{our_mission}</h4>
+                    <hr />
+                    <h3>Our Vision</h3>
+                    <h4>{our_vision}</h4>
+                  </div>
+                </div>
+                {/* About Text */}
+
+                {/* About Img */}
+                <div className="col-sm-6">
+                  <div className="our-mission">
+                    <img src="assets/images/our-mission.png" alt="" />
+                  </div>
+                </div>
+                {/* About Img */}
+              </div>
+            </div>
             <div className="session-news curve-down style-2 has-layout">
               <span className="scho-service-icon style-2">
                 <img src={Logo} alt="" />
@@ -94,6 +119,8 @@ export default ({ data }) => {
       content={post.html}
       subheading={post.frontmatter.subheading}
       top_image={post.frontmatter.top_image}
+      our_mission={post.frontmatter.our_mission}
+      our_vision={post.frontmatter.our_vision}
     />
   )
 }
@@ -106,6 +133,8 @@ export const aboutPageQuery = graphql`
         subheading
         title
         top_image
+        our_mission
+        our_vision
       }
     }
   }
