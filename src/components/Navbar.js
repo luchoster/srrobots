@@ -72,11 +72,13 @@ const Navbar = () => (
                     about us
                   </Link>
                 </li>
-                <li>
-                  <Link className="color-2" to="/gallery">
-                    gallery
-                  </Link>
-                </li>
+                {
+                  // <li>
+                  //   <Link className="color-2" to="/gallery">
+                  //     gallery
+                  //   </Link>
+                  // </li>
+                }
                 {/*<li>
 									<a className="color-2" href="#">pages</a>
 									<ul>
