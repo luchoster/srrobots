@@ -133,8 +133,6 @@ export const aboutPageQuery = graphql`
         subheading
         title
         top_image
-        our_mission
-        our_vision
       }
     }
   }

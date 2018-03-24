@@ -51,8 +51,8 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Top Section Image", name: "top_image", widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Our Mission", name: "our_mission", widget: text}
-          - {label: "Our Vision", name: "our_vision", widget: text}
+          - {label: "Our Mission", name: "mission", widget: string}
+          - {label: "Our Vision", name: "vision", widget: string}
       - file: "src/pages/home/index.md"
         label: "Home Page"
         name: "home"
