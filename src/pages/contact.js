@@ -39,15 +39,18 @@ const ContactPage = () => (
 
                 {/* Form */}
                 <form
-                  className="comment-form contact"
-                  netlify
-                  method="POST"
                   name="contact"
+                  method="post"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  className="comment-form contact"
                 >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="form-group">
                     <label>Your Name</label>
                     <input
                       type="text"
+                      name="name"
                       className="form-control"
                       placeholder="Johnny Five"
                     />
@@ -57,6 +60,7 @@ const ContactPage = () => (
                     <label>Your Email</label>
                     <input
                       type="text"
+                      name="email"
                       className="form-control"
                       placeholder="email@robots.com"
                     />
@@ -66,6 +70,7 @@ const ContactPage = () => (
                     <label>Phone Number</label>
                     <input
                       type="text"
+                      name="phone"
                       className="form-control"
                       placeholder="123 456 789"
                     />
@@ -75,6 +80,7 @@ const ContactPage = () => (
                     <textarea
                       className="form-control"
                       rows="10"
+                      name="message"
                       placeholder="Enter Message"
                     />
                   </div>
