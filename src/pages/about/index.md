@@ -1,5 +1,6 @@
 ---
 templateKey: about-page
+subheading: Who We Are
 title: About our values
 top_image: /img/r-heart-bot.png
 ---
