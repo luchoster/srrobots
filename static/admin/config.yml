@@ -47,7 +47,9 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Sub Heading", name: subheading, widget: string}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Top Section Image", name: "top_image", widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/home/index.md"
         label: "Home Page"

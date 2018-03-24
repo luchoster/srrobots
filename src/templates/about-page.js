@@ -1,7 +1,13 @@
 import React from 'react'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({
+  subheading,
+  title,
+  top_image,
+  content,
+  contentComponent,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -15,7 +21,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="about-text style-2">
-                  <h5>Story Teller, Painting</h5>
+                  <h5>{subheading}</h5>
                   <div className="kids-img has-layout">
                     <ul>
                       <li>
@@ -49,10 +55,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             </div>
             <div className="session-news curve-down style-2 has-layout">
               <span className="scho-service-icon style-2">
-                <img
-                  src={require('../assets/imgs/school-services/img-1-1.png')}
-                  alt=""
-                />
+                <img src={top_image} alt="" />
               </span>
               <img src={require('../assets/imgs/about-img-2.jpg')} alt="" />
               <div className="news-caption position-center-x">
@@ -84,6 +87,8 @@ export default ({ data }) => {
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       content={post.html}
+      subheading={post.frontmatter.subheading}
+      top_image={post.frontmatter.top_image}
     />
   )
 }
@@ -93,7 +98,9 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        subheading
         title
+        top_image
       }
     }
   }
