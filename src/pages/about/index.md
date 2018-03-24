@@ -3,7 +3,7 @@ templateKey: about-page
 subheading: Robots for everyone
 title: Who We Are?
 top_image: /img/r-heart-bot.png
-mission: >-
+mission_text: >-
   Our mission is to place educational robots in schools and homes around the
   world to positively impact the lives of children through learning.
 ---
