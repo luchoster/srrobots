@@ -26,11 +26,7 @@ export default class ShopPageTemplate extends React.Component {
               {
                 //<span className="discount-batch" />
               }
-              <h2>The Sr. Robots Shop</h2>
-              <p>
-                We are giving new and used Latest Local and Imported school
-                items, 20% Off for new registered students,
-              </p>
+              <h2>The Señor Robots Shop</h2>
             </div>
           </div>
         </div>

@@ -84,7 +84,7 @@ const ContactPage = () => (
                       placeholder="Enter Message"
                     />
                   </div>
-                  <div netlify-recaptcha />
+                  <div netlify-recaptcha="true" />
                   <button className="tc-btn full-with shadow-0">
                     Submit Message
                   </button>

@@ -17,9 +17,16 @@ const Navbar = () => (
             </div>
 
             <div className="topbar-address">
-              {/*<a className="addmissions-open" href="#"><i className="icon-star-full" />Addmissions Open</a>*/}
+              <a href="#" className="snipcart-user-logout logout">
+                Logout
+              </a>
+              <a className="my-account snipcart-user-profile" href="#">
+                <i className="fa fa-star" />{' '}
+                <span className="snipcart-user-email">My Account</span>
+              </a>
               <p>
-                <span>Contact Us</span>(702) 514-0607, info@srrobots.com
+                <span>Contact Us</span>(702) 514-0607 |{' '}
+                <Link to="/contact">support@srrobots.com</Link>
               </p>
             </div>
           </div>
@@ -90,6 +97,14 @@ const Navbar = () => (
                 <li>
                   <Link className="color-7" to="/contact">
                     contact us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="" className="snipcart-checkout cart color-4">
+                    <div className="snipcart-summary">
+                      <i className="fa fa-shopping-cart" />
+                      <span className="snipcart-total-items qty" />
+                    </div>
                   </Link>
                 </li>
               </ul>

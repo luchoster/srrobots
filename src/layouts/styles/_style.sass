@@ -729,23 +729,55 @@ ul
     span
       margin: 0 10px 0 0
       color: #f6b61d
+    a
+      display: inline-block
 
-.addmissions-open
+.my-account
   float: right
-  margin: 2px 0 0
+  transition: all 0.25s ease
   i
     margin: 0 8px 0 0
     color: #d3dfe1
+    transition: all 0.25s ease
   &:hover
     color: #f6b61d
     i
       color: #f6b61d
 
-.language-drop
+.cart
+  position: relative
+  float: right
+  display: block
+  width: 60px
+  height: 60px
+  line-height: 40px
+  font-size: 16px
+  font-weight: bold
+  color: #fff
+  position: relative
+  text-align: center
+  .qty
+    min-width: 30px
+    height: 30px
+    text-align: center
+    line-height: 30px
+    position: absolute
+    top: 0
+    right: 0
+    background: #1bb2c0
+    border-radius: 100%
+    font-size: 14px
+    font-family: Montserrat,sans-serif
+    background-color: rgba(89,223,127,0.3)
+
+.logout
   position: relative
   float: right
   margin: 0 0 0 20px
   padding: 0 13px
+  color: #f6b61d
+  &:hover
+    color: #d3dfe1
   &::before
     content: ""
     position: absolute

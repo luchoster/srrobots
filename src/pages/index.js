@@ -178,7 +178,7 @@ export default class Home extends React.Component {
               {/* About Text */}
               <div className="col-lg-6 col-md-7 pull-right">
                 <div className="about-text">
-                  <h3 className="curve-heading">About Sr. Robots</h3>
+                  <h3 className="curve-heading">About Señor Robots</h3>
                   <div dangerouslySetInnerHTML={rawMarkup(page.mission.text)} />
                   <ul className="check-list">
                     {mapIndexed((item, index) => (

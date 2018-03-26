@@ -1,0 +1,38 @@
+//Hide the website with a full color
+
+.snip-layout
+  // #snipcart-header, #snipcart-footer, #snipcart-overlay
+  //   background: #000 !important
+  // Remove the padding from the container to expend the cart
+  // padding: 0 !important
+  // changing the top bar
+  .snip-header
+    &__user
+      background: #474747 !important
+      &-mail
+        display: inline-block
+        &:after
+          content: " | Profile"
+    &__total
+      background: #474747 !important
+  // Make the cart take full width
+  // &__main-container
+  //   max-width: none !important
+  //   width: 100%
+  //   overflow-x: hidden
+  //   height: 100%
+  // changing the color of the x to remove
+  .snip-product
+    &__remove
+      color: #f6b61d !important
+  // Remove the image of the close button and hide the label
+  #snipcart-close
+    background: none
+    text-indent: 0
+    width: auto
+    color: #000
+    display: block
+    top: .208em !important
+    color: #f6b61d
+    width: 20px
+    // Add a new label and arrow to the close button

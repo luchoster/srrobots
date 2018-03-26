@@ -56,18 +56,20 @@ export const ProductPostTemplate = ({
                   <div className="sale-nd-rete">
                     <div className="product-rate">Price: $ {price}</div>
                   </div>
-                  <div className="product-alerts after-clear">
-                    <ul>
-                      <li className="availibilty-lable">
-                        <i className="icon-check-circle" />Availibilty:<span>
-                          INSTOCK
-                        </span>
-                      </li>
-                    </ul>
-                    <span className="search-lable">
-                      <i className="icon-star-full" />
-                    </span>
-                  </div>
+                  {
+                    // <div className="product-alerts after-clear">
+                    //   <ul>
+                    //     <li className="availibilty-lable">
+                    //       <i className="icon-check-circle" />Availibilty:<span>
+                    //         INSTOCK
+                    //       </span>
+                    //     </li>
+                    //   </ul>
+                    //   <span className="search-lable">
+                    //     <i className="icon-star-full" />
+                    //   </span>
+                    // </div>
+                  }
                   <p>
                     Ouch whimsical yikes after lantern confusedly like the dear
                     this more far slew crookedly at dove pithy and following
@@ -90,24 +92,26 @@ export const ProductPostTemplate = ({
                     >
                       Add to Cart
                     </a>
-                    <ul className="share-btn btn-list">
-                      <li>
-                        <a className="tc-btn shadow-0 facebook" href="#">
-                          <i className="icon-facebook-official" />Share on
-                          Facebook
-                        </a>
-                      </li>
-                      <li>
-                        <a className="tc-btn shadow-0 twitter" href="#">
-                          <i className="icon-twitter" />Share on Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a className="tc-btn shadow-0 plus" href="#">
-                          +
-                        </a>
-                      </li>
-                    </ul>
+                    {
+                      // <ul className="share-btn btn-list">
+                      //   <li>
+                      //     <a className="tc-btn shadow-0 facebook" href="#">
+                      //       <i className="icon-facebook-official" />Share on
+                      //       Facebook
+                      //     </a>
+                      //   </li>
+                      //   <li>
+                      //     <a className="tc-btn shadow-0 twitter" href="#">
+                      //       <i className="icon-twitter" />Share on Twitter
+                      //     </a>
+                      //   </li>
+                      //   <li>
+                      //     <a className="tc-btn shadow-0 plus" href="#">
+                      //       +
+                      //     </a>
+                      //   </li>
+                      // </ul>
+                    }
                   </div>
                 </div>
               </div>
@@ -132,16 +136,18 @@ export const ProductPostTemplate = ({
                         Description
                       </a>
                     </li>
-                    <li role="presentation">
-                      <a href="#reviews" role="tab" data-toggle="tab">
-                        Reviews (0)
-                      </a>
-                    </li>
-                    <li role="presentation">
-                      <a href="#custom-tabs" role="tab" data-toggle="tab">
-                        Custom Tabs
-                      </a>
-                    </li>
+                    {
+                      // <li role="presentation">
+                      //   <a href="#reviews" role="tab" data-toggle="tab">
+                      //     Reviews (0)
+                      //   </a>
+                      // </li>
+                      // <li role="presentation">
+                      //   <a href="#custom-tabs" role="tab" data-toggle="tab">
+                      //     Custom Tabs
+                      //   </a>
+                      // </li>
+                    }
                   </ul>
                   {/* Tabs Nav List */}
 
