@@ -1,10 +1,13 @@
 ---
 templateKey: product-details
-title: Meet Edison
+title: Edison V2 Robot
 slug: meet-edison
 sku: '1'
 price: '49.99'
 prod_image: /img/edisonv2topside.jpg
+description: >-
+  Get started on your EdVenture into coding and robotics with the EdPack1, which
+  includes 1 Edison robot and 1 EdComm programming cable
 ---
 ## More than just a robot
 
