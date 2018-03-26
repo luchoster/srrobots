@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
-import { createMarkup } from '../lib/helpers'
+import { createMarkup, rawMarkup } from '../lib/helpers'
 
 export const ProductPostTemplate = ({
   content,
@@ -71,7 +71,10 @@ export const ProductPostTemplate = ({
                     //   </span>
                     // </div>
                   }
-                  <div dangerouslySetInnerHTML={createMarkup(description)} />
+                  <div
+                    className="short-description"
+                    dangerouslySetInnerHTML={rawMarkup(description)}
+                  />
                   <div className="btn-nd-shares has-layout">
                     <a
                       href=""
