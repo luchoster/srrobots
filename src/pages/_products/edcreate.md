@@ -5,6 +5,16 @@ slug: edcreate
 sku: '301'
 price: '29.99'
 prod_image: /img/edcreatebagandcontents.jpg
+description: >-
+  The EdCreate Edison robot creator’s kit is a construction system consisting of
+  115 interlocking building blocks, pegs, gears, and other parts. The individual
+  EdCreate pieces are designed with studs and holes which are compatible with
+  Edison robots and any other LEGO brick compatible building system.
+
+
+  One EdCreate kit can be used to create five different EdBuilds and a range of
+  other engineering and design challenges. The kit can also be expanded with
+  other LEGO brick compatible building system parts.
 ---
 ## About The EdCreate – Edison Robot Creator’s Kit
 
