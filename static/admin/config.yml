@@ -21,6 +21,7 @@ collections:
       - {label: "SKU", name: "sku", widget: "string" }
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Image", name: "prod_image", widget: "image"}
+      - {label: "Short Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "blog"

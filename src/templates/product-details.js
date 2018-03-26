@@ -7,6 +7,7 @@ import { createMarkup } from '../lib/helpers'
 export const ProductPostTemplate = ({
   content,
   contentComponent,
+  description,
   title,
   slug,
   sku,
@@ -70,14 +71,7 @@ export const ProductPostTemplate = ({
                     //   </span>
                     // </div>
                   }
-                  <p>
-                    Ouch whimsical yikes after lantern confusedly like the dear
-                    this more far slew crookedly at dove pithy and following
-                    excluding held wolf egret the contrary goodness publicly
-                    capital circa far desolately hello more much shoddily to
-                    this and a maliciously beat and empirically jeepers heard
-                    less one much rode froze honey hen that inside.
-                  </p>
+                  <div dangerouslySetInnerHTML={createMarkup(description)} />
                   <div className="btn-nd-shares has-layout">
                     <a
                       href=""
@@ -208,6 +202,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        description
         title
         slug
         sku
