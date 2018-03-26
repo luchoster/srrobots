@@ -39,7 +39,7 @@ class TemplateWrapper extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title="Sr. Robots" />
+        <Helmet title="Señor Robots" />
         <AppBar position="static" className="app-bar d-lg-none">
           <Toolbar>
             <IconButton

@@ -7,6 +7,11 @@
   // padding: 0 !important
   // changing the top bar
   .snip-header
+    display: flex !important
+    align-items: center !important
+    justify-content: space-between !important
+    &__title
+      position: relative !important
     &__user
       background: #474747 !important
       &-mail
@@ -15,6 +20,10 @@
           content: " | Profile"
     &__total
       background: #474747 !important
+      margin-top: 0 !important
+    &__continue
+      display: block !important
+      margin-right: 20px !important
   // Make the cart take full width
   // &__main-container
   //   max-width: none !important
@@ -30,9 +39,9 @@
     background: none
     text-indent: 0
     width: auto
-    color: #000
     display: block
     top: .208em !important
-    color: #f6b61d
+    color: #fff
     width: 20px
+    z-index: 205
     // Add a new label and arrow to the close button
