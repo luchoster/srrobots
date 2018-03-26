@@ -60,10 +60,11 @@ mission:
 testimonials:
   - author: Tim
     quote: >-
-      Much flew yikes wholeheartedly goodness hey changed considering mongoose
-      delinquent affectionately piranha flustered testy versus including darn
-      and a much while outside alas a intricately due manatee kookaburra
-      aardvark the llama jaded much far darn.
+      What a great piece of kit for an amazing price. I'm not a huge robotics
+      person so when this arrived I was surprised how easy this was to get up
+      and running straight out of the box.  My children have become attached to
+      Edison and he is now part of the family. We might even have to add another
+      one to the collection!
     title: Parent
 bottom_gallery:
   - image: /img/img-01.jpg
