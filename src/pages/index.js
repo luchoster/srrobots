@@ -73,7 +73,7 @@ export default class Home extends React.Component {
                         <img src={page.intro.blurbs[1].image} alt="" />
                       </span>
                       <h4>
-                        <a href="#">Happy Social Group</a>
+                        <a href="#">Develop Skills That Matter</a>
                       </h4>
                       <p>{page.intro.blurbs[1].text}</p>
                     </div>
@@ -84,7 +84,7 @@ export default class Home extends React.Component {
                         <img src={page.intro.blurbs[2].image} alt="" />
                       </span>
                       <h4>
-                        <a href="#">We Love Math &amp; Drawing</a>
+                        <a href="#">Pre-Made Lesson Plans</a>
                       </h4>
                       <p>{page.intro.blurbs[2].text}</p>
                     </div>
@@ -95,7 +95,7 @@ export default class Home extends React.Component {
                         <img src={page.intro.blurbs[3].image} alt="" />
                       </span>
                       <h4>
-                        <a href="#">Learn With Best Teachers</a>
+                        <a href="#">Independent Project Ideas</a>
                       </h4>
                       <p>{page.intro.blurbs[3].text}</p>
                     </div>
@@ -106,7 +106,7 @@ export default class Home extends React.Component {
                         <img src={page.intro.blurbs[4].image} alt="" />
                       </span>
                       <h4>
-                        <a href="#">Happy Social Group</a>
+                        <a href="#">Make Learning Tangible</a>
                       </h4>
                       <p>{page.intro.blurbs[4].text}</p>
                     </div>
@@ -117,7 +117,7 @@ export default class Home extends React.Component {
                         <img src={page.intro.blurbs[5].image} alt="" />
                       </span>
                       <h4>
-                        <a href="#">We Love Math &amp; Drawing</a>
+                        <a href="#">Support and Bulk Order Discounts</a>
                       </h4>
                       <p>{page.intro.blurbs[5].text}</p>
                     </div>
@@ -165,7 +165,7 @@ export default class Home extends React.Component {
           </div>
         </section>
 
-        {/* About Nersery */}
+        {/* About Senor Robots */}
         <section className="tc-padding">
           <div className="container">
             <div className="row">
@@ -191,7 +191,7 @@ export default class Home extends React.Component {
             </div>
           </div>
         </section>
-        {/* About Nersery */}
+        {/* About Senor robots */}
 
         {/* Testimonials */}
         <section
@@ -247,9 +247,7 @@ export default class Home extends React.Component {
                   >
                     <img src={item.image} alt="" />
                     <figcaption className="overlay">
-                      <h4 className="position-center-center">
-                        <a href="gallery.html">{item.text}</a>
-                      </h4>
+                      <h4 className="position-center-center">{item.text}</h4>
                     </figcaption>
                   </figure>
                 </div>
