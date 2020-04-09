@@ -33,14 +33,14 @@ export default class ShopPageTemplate extends React.Component {
         <main id="main">
           {/* Products Grids */}
           <section className="shop-grid tc-padding">
-            <div className="container">
+            <div className="">
               {/* Products Grid */}
               <div className="custom-border">
                 <div className="row no-gutters">
                   {/* Shop Grid Column */}
                   {mapIndexed((item, index) => (
                     <div
-                      className="col-lg-6 col-sm-4 col-xs-6 r-full-width"
+                      className="col-lg-4 col-12 col-md-6 r-full-width"
                       key={index}
                     >
                       <div className="shop-grid-column">
