@@ -3,7 +3,7 @@ templateKey: product-details
 title: EdSTEM Home Pack – 2 Edison robots and EdCreate kit
 slug: edcreate-pack
 sku: '333'
-price: '125'
+price: '114'
 prod_image: /img/edcreatePack.jpg
 description: >-
   EdSTEM Home Pack – 2 Edison robots with 2 EdComm programming cables and 1 EdCreate Edison robot creator’s kit.
